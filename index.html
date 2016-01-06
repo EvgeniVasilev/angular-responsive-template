@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="mobileApp">
+    <head>
+        <title>Index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="app-css/app.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="container-fluid">
+        <div class="row header">
+            <div class="col-lg-2">
+                <div id="showMenu" data-aria="button" title="Show Menu">
+                    <i class="glyphicon glyphicon glyphicon-align-justify"></i>               
+                </div>
+            </div>
+        </div>
+        <!--animated navigation panel-->
+        <div id="left-nav" class="left-side-nav col-lg-12 col-md-12 col-sm-12 col-xs-12" data-aria="menu">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a  href="#/" data-aria="navigation" title="About us page">About Us</a>
+                </li>
+                <li class="list-group-item">
+                    <a  href="#/contacts" data-aria="navigation" title="Contact  us page">Contact Us</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#/careers" data-aria="navigation" title="Careers Page">Careers</a>
+                </li>
+                <li class="list-group-item">
+                    <a  href="#/some" data-aria="navigation" title="Some Page">Some Page</a>
+                </li>
+            </ul>
+        </div>
+        <!--animated navigation panel-->
+        <!--view-->
+        <div class="row" ng-view="">        
+
+        </div>    
+        <!--view-->
+        <script src="bower_components/angular/angular.js" type="text/javascript"></script>
+        <script src="bower_components/angular-animate/angular-animate.js" type="text/javascript"></script>
+        <script src="bower_components/gsap/src/minified/TweenMax.min.js" type="text/javascript"></script>
+        <script src="bower_components/angular-route/angular-route.js" type="text/javascript"></script>
+        <script src="app/app.js" type="text/javascript"></script>
+        <script src="router/routes.js" type="text/javascript"></script>
+        <script src="scripts/menu.js" type="text/javascript"></script>
+    </body>
+</html>

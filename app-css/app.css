@@ -1,0 +1,55 @@
+.left-side-nav {
+    background-color: white;
+    box-shadow: 3px 3px 12px silver;
+    border-radius: 3px;
+    height: auto;
+    position: absolute;
+    left: -100%;
+}
+
+.left-side-nav p{
+    width: 100%;
+    margin: 5px auto;
+    text-align: center;
+    z-index: 1000;
+    cursor: pointer;
+}           
+
+.left-side-nav p{
+    width: 100%;
+}
+
+#showMenu{
+    font-size: 40px;                
+    color: white;               
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px 0  0 5px;
+}
+
+.header{
+    background-color: black;
+}
+
+.list-group-item:hover{
+    background-color: #cccccc;
+} 
+
+.list-group-item{
+    padding: 0;
+    height: 42px;
+}
+
+.list-group-item a{
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    height: 42px;
+    display: block;
+    padding: 10px 0 0 10px; 
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
