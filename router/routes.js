@@ -18,14 +18,24 @@ mobileApp.config(["$routeProvider", function ($routeProvider) {
                                 return;
                             }
                             if ($scope.myForm.$valid) {
+                                var host = $window.location.hostname;
+                                var path = $window.location.pathname;
+                                var port = $window.location.port;
                                 alert("Cooll, your messge will be send, if someone adds backendq of course! \n :-)");
-                                $window.location = $window.location + "/";
+
+                                $window.location = "http://" + host + ":" + port + path + "#/complete";
 
                                 // Todo send to server
                             }
 
 
                         };
+                    }
+                })
+                .when("/complete", {
+                    templateUrl: "./views/complete.html",
+                    controller: function ($scope) {
+                        // Todo code
                     }
                 })
                 .when("/careers", {

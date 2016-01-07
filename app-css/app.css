@@ -55,6 +55,12 @@ p {
     text-indent: 50px;
 }
 
+.padded{
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
 
 /*animation  - view*/
 .view-animate.ng-enter, .view-animate.ng-leave {
