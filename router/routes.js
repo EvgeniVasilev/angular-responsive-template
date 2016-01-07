@@ -21,7 +21,7 @@ mobileApp.config(["$routeProvider", function ($routeProvider) {
                                 var host = $window.location.hostname;
                                 var path = $window.location.pathname;
                                 var port = $window.location.port;
-                                alert("Cooll, your messge will be send, if someone adds backendq of course! \n :-)");
+                                alert("Cooll, your messge will be send, if someone adds backend, of course! \n :-)");
 
                                 $window.location = "http://" + host + ":" + port + path + "#/complete";
 
