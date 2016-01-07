@@ -3,25 +3,41 @@
         <small>
             Contacts Us
         </small>
-    </h1>
-    <form class="form-horizontal col-lg-6 col-lg-offset-3" data-aria="contact form">
+    </h1>   
+    <form class="form-horizontal col-lg-6 col-lg-offset-3" data-aria="contact form" name="myForm" id="myForm" ng-submit="isValidForm()" novalidate>
         <div class="form-group">
             <label for="fullName" class="label label-default">Full Name:</label>
             <br/>
             <br/>
-            <input type="text" id="fullName" class="form-control" data-aria="text"/>
+            <input type="text" id="fullName"  name="fullName" autocomplete="off" class="form-control" data-aria="text"  ng-model="fullName" required/>
+            <!--error message-->
+            <div ng-show="myForm.$submitted || myForm.fullName.$touched" class="custom-error-class">
+                <div ng-show="myForm.fullName.$error.required" class="custom-error-class">Please fill in the field!</div>
+            </div>
+            <!--error message-->
         </div>
         <div class="form-group">
-            <label for="email" class="label label-default">Email:</label>
+            <label for="uemail" class="label label-default">Email:</label>
             <br/>
             <br/>
-            <input type="email" id="email" class="form-control" data-aria="text"/>
+            <input type="email" id="uemail" name="uemail" autocomplete="off" class="form-control" data-aria="text" ng-model="uemail" required/>
+            <!--error message-->
+            <div ng-show="myForm.$submitted || myForm.uemail.$touched" class="custom-error-class">
+                <div ng-show="myForm.uemail.$error.required" class="custom-error-class">Please fill in the field!</div>  
+                <div ng-show="myForm.uemail.$error.email" class="custom-error-class">Please fill in the valid e-mail!</div>  
+            </div>
+            <!--error message-->
         </div>
         <div class="form-group">
             <label for="message" class="label label-default">Message:</label>
             <br/>
             <br/>
-            <textarea id="message" class="form-control" data-aria="text"></textarea>
+            <textarea id="message"  name="message" class="form-control" data-aria="text" ng-model="message" required></textarea>
+            <!--error message-->
+            <div ng-show="myForm.$submitted || myForm.message.$touched" class="custom-error-class">
+                <div ng-show="myForm.message.$error.required" class="custom-error-class">Please fill in the field!</div>
+            </div>
+            <!--error message-->
         </div>
         <div class="form-group">            
             <br/>

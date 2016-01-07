@@ -12,13 +12,25 @@ mobileApp.config(["$routeProvider", function ($routeProvider) {
                 })
                 .when("/contacts", {
                     templateUrl: "./views/contacts.html",
-                    controller: function () {
-                        // Todo code
+                    controller: function ($scope, $window) {
+                        $scope.isValidForm = function () {
+                            if (!$scope.myForm.$valid) {
+                                return;
+                            }
+                            if ($scope.myForm.$valid) {
+                                alert("Cooll, your messge will be send, if someone adds backendq of course! \n :-)");
+                                $window.location = $window.location + "/";
+
+                                // Todo send to server
+                            }
+
+
+                        };
                     }
                 })
                 .when("/careers", {
                     templateUrl: "./views/careers.html",
-                    controller: function () {
+                    controller: function ($scope) {
                         // Todo code
                     }
                 })

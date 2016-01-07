@@ -18,7 +18,7 @@ window.onload = function () {
 
         // hide menu after click on the menu button
         function hideMenu() {
-            TweenMax.to("#left-nav", 0.3, {left: "-100%", onComplete: isClosed});
+            TweenMax.to("#left-nav", 0.1, {display: "none" , onComplete: isClosed});
         }
 
         // callback if the menu is shown
@@ -30,13 +30,17 @@ window.onload = function () {
         // callback if menu is hidden 
         // after click on the menu button
         function isClosed() {
+            var navigation = document.getElementById("left-nav");
             oppened = false;
+            navigation.style.display = "block";
+            navigation.style.position = "absolute";
+            navigation.style.left = "-102%";
         }
 
         // hide menu after click on the 
         // menu item
         document.getElementById("left-nav").onclick = function () {
-            TweenMax.to("#left-nav", 0.3, {left: "-100%", onComplete: isClosed});
+            TweenMax.to("#left-nav", 0.1, {display: "none", onComplete: isClosed});
         };
     };
 };

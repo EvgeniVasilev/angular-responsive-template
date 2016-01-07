@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="mobileApp">
     <head>
-        <title>Index</title>
+        <title>My Application</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
@@ -33,10 +33,12 @@
             </ul>
         </div>
         <!--animated navigation panel-->
-        <!--view-->
-        <div class="row" ng-view="">        
+        <!--view-->    
+        <div class="view-animate">
+            <div class="row view-animate" ng-view="">        
 
-        </div>    
+            </div>      
+        </div>
         <!--view-->
         <script src="bower_components/angular/angular.js" type="text/javascript"></script>
         <script src="bower_components/angular-animate/angular-animate.js" type="text/javascript"></script>
