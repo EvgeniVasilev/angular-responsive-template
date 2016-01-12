@@ -61,6 +61,18 @@ p {
     margin-top: 20px;
 }
 
+.buttons-translate{
+    cursor: pointer;
+}
+
+.red{
+    color: red;
+}
+
+.red:hover{
+    color: red;
+    text-decoration: none;
+}
 
 /*animation  - view*/
 .view-animate.ng-enter, .view-animate.ng-leave {
