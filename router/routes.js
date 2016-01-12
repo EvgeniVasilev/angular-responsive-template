@@ -24,8 +24,7 @@ mobileApp.config(["$routeProvider", function ($routeProvider) {
                         alert("Cooll, your messge will be send, if someone adds backend, of course! \n :-)");
 
                         $window.location = "http://" + host + ":" + port + path + "#/complete";
-
-                        // Todo send to server
+                        
                     }
 
 
