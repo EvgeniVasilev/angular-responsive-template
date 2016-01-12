@@ -17,27 +17,11 @@ mobileApp.config(["$routeProvider", function ($routeProvider) {
                     if (!$scope.myForm.$valid) {
                         return;
                     }
-<<<<<<< HEAD
                     if ($scope.myForm.$valid) {
                         var host = $window.location.hostname;
                         var path = $window.location.pathname;
                         var port = $window.location.port;
                         alert("Cooll, your messge will be send, if someone adds backend, of course! \n :-)");
-=======
-                })
-                .when("/contacts", {
-                    templateUrl: "./views/contacts.html",
-                    controller: function ($scope, $window) {
-                        $scope.isValidForm = function () {
-                            if (!$scope.myForm.$valid) {
-                                return;
-                            }
-                            if ($scope.myForm.$valid) {
-                                var host = $window.location.hostname;
-                                var path = $window.location.pathname;
-                                var port = $window.location.port;
-                                alert("Cool, your messge will be send, if someone adds backend, of course! \n :-)");
->>>>>>> origin/gh-pages
 
                         $window.location = "http://" + host + ":" + port + path + "#/complete";
 
@@ -45,7 +29,6 @@ mobileApp.config(["$routeProvider", function ($routeProvider) {
                     }
 
 
-<<<<<<< HEAD
                 };
             }
         })
@@ -68,22 +51,3 @@ mobileApp.config(["$routeProvider", function ($routeProvider) {
         })
         .otherwise({redirectTo: "/"});
 }]);
-=======
-                        };
-                    }
-                })
-                .when("/complete", {
-                    templateUrl: "./views/complete.html",
-                    controller: function ($scope) {
-                        // Todo code
-                    }
-                })
-                .when("/careers", {
-                    templateUrl: "./views/careers.html",
-                    controller: function ($scope) {
-                        // Todo code
-                    }
-                })
-                .otherwise({redirectTo: "/"});
-    }]);
->>>>>>> origin/gh-pages
