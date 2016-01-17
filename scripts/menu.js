@@ -1,7 +1,7 @@
 // resource <./bower_components/sap/TweenMax.js>
 
 window.onload = function () {
-    
+
     "use strict";
     var oppened = false;
     document.getElementById("showMenu").onclick = function () {
@@ -18,7 +18,7 @@ window.onload = function () {
 
         // hide menu after click on the menu button
         function hideMenu() {
-            TweenMax.to("#left-nav", 0.1, {display: "none" , onComplete: isClosed});
+            TweenMax.to("#left-nav", 0.1, {display: "none", onComplete: isClosed});
         }
 
         // callback if the menu is shown

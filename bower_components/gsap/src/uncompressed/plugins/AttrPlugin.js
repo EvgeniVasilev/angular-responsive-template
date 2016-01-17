@@ -9,29 +9,31 @@
  * 
  * @author: Jack Doyle, jack@greensock.com
  */
-var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(global) !== "undefined") ? global : this || window; //helps ensure compatibility with AMD/RequireJS and CommonJS/Node
-(_gsScope._gsQueue || (_gsScope._gsQueue = [])).push( function() {
-	
-	"use strict";
+var _gsScope = (typeof (module) !== "undefined" && module.exports && typeof (global) !== "undefined") ? global : this || window; //helps ensure compatibility with AMD/RequireJS and CommonJS/Node
+(_gsScope._gsQueue || (_gsScope._gsQueue = [])).push(function () {
 
-	_gsScope._gsDefine.plugin({
-		propName: "attr",
-		API: 2,
-		version: "0.5.0",
+    "use strict";
 
-		//called when the tween renders for the first time. This is where initial values should be recorded and any setup routines should run.
-		init: function(target, value, tween) {
-			var p;
-			if (typeof(target.setAttribute) !== "function") {
-				return false;
-			}
-			for (p in value) {
-				this._addTween(target, "setAttribute", target.getAttribute(p) + "", value[p] + "", p, false, p);
-				this._overwriteProps.push(p);
-			}
-			return true;
-		}
+    _gsScope._gsDefine.plugin({
+        propName: "attr",
+        API: 2,
+        version: "0.5.0",
+        //called when the tween renders for the first time. This is where initial values should be recorded and any setup routines should run.
+        init: function (target, value, tween) {
+            var p;
+            if (typeof (target.setAttribute) !== "function") {
+                return false;
+            }
+            for (p in value) {
+                this._addTween(target, "setAttribute", target.getAttribute(p) + "", value[p] + "", p, false, p);
+                this._overwriteProps.push(p);
+            }
+            return true;
+        }
 
-	});
+    });
 
-}); if (_gsScope._gsDefine) { _gsScope._gsQueue.pop()(); }
+});
+if (_gsScope._gsDefine) {
+    _gsScope._gsQueue.pop()();
+}

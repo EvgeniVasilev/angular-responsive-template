@@ -19,16 +19,16 @@
         <div id="left-nav" class="left-side-nav col-lg-12 col-md-12 col-sm-12 col-xs-12" data-aria="menu">
             <ul class="list-group">
                 <li class="list-group-item">
-                    <a  href="#/" data-aria="navigation" title="About us page">{{"ABOUT_US" | translate}}</a>
+                    <a  href="#/" data-aria="navigation" title="About us page" ng-bind='"ABOUT_US" | translate'></a>
                 </li>
                 <li class="list-group-item">
-                    <a  href="#/contacts" data-aria="navigation" title="Contact  us page">{{"CONTACT_US" | translate}}</a>
+                    <a  href="#/contacts" data-aria="navigation" title="Contact  us page">{{"CONTACT_US"| translate}}</a>
                 </li>
                 <li class="list-group-item">
-                    <a href="#/careers" data-aria="navigation" title="Careers Page">{{"CAREERS" | translate}}</a>
+                    <a href="#/careers" data-aria="navigation" title="Careers Page" ng-bind=' "CAREERS" | translate'></a>
                 </li>
                 <li class="list-group-item">
-                    <a  href="#/some" data-aria="navigation" title="Some Page">{{"SOME_PAGE" | translate}}</a>
+                    <a  href="#/some" data-aria="navigation" title="Some Page" ng-bind=' "SOME_PAGE" | translate'></a>
                 </li>
             </ul>            
         </div>
@@ -36,15 +36,15 @@
         <div class="row buttons-translate">    
 
             <div class="col-lg-3 col-sm-3 col-lg-md-2 col-xs-4">
-                <a  ng-click="changeLanguage('bg')" ng-class="{'red' : tab === 'bg'}">{{"BULGARIAN" | translate}}</a>
+                <a  ng-click="changeLanguage('bg')" ng-class="{'red' : tab === 'bg'}" ng-bind='"BULGARIAN" | translate'></a>
             </div>
-          
+
             <div class="col-lg-3 col-sm-3 col-lg-md-2 col-xs-4">
-                <a ng-click="changeLanguage('en')" ng-class="{'red' : tab === 'en'}">{{"ENGLISH" | translate}}</a>
+                <a ng-click="changeLanguage('en')" ng-class="{'red' : tab === 'en'}" ng-bind='"ENGLISH" | translate'></a>
             </div>
-           {{color}}
+            {{color}}
             <div class="col-lg-3 col-sm-3 col-lg-md-2 col-xs-4">
-                <a ng-click="changeLanguage('ru')" ng-class="{'red' : tab === 'ru'}">{{"RUSSIAN" | translate}}</a>
+                <a ng-click="changeLanguage('ru')" ng-class="{'red' : tab === 'ru'}" ng-bind='"RUSSIAN" | translate'></a>
             </div>
         </div>
         <!--animated navigation panel-->
