@@ -43,11 +43,6 @@ mobileApp.config(["$routeProvider", function ($routeProvider) {
                     controller: function ($scope) {
                         // Todo code
                     }
-                }).when("myCarousal", {
-            templateUrl: "./views/index.html",
-            controllerr: function () {
-                // Todo code
-            }
-        })
+                })
                 .otherwise({redirectTo: "/"});
     }]);
