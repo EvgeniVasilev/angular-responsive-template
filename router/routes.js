@@ -23,10 +23,16 @@ mobileApp.config(["$routeProvider", function ($routeProvider) {
                                 var port = $window.location.port;
                                 alert("Cooll, your messge will be send, if someone adds backend, of course! \n :-)");
 
+<<<<<<< HEAD
                                 $window.location = "http://" + host + ":" + port + path + "#/complete";
 
                                 // Todo send to server
                             }
+=======
+                        $window.location = "http://" + host + ":" + port + path + "#/complete";
+                        
+                    }
+>>>>>>> origin/gh-pages
 
 
                         };
