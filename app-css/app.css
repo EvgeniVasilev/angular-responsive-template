@@ -74,6 +74,18 @@ p {
     text-decoration: none;
 }
 
+.cap{    
+    background-color: rgb(34,34,34);
+    height: 40px;
+    width: 100%;
+    text-align:  center;
+    padding: 0 0 49px 0;
+    border-radius: 5px;
+}
+
+.cap small{
+    color: white;
+}
 /*animation  - view*/
 .view-animate.ng-enter, .view-animate.ng-leave {
     transition:all linear 0.4s;  
