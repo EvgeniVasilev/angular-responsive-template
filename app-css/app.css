@@ -117,7 +117,7 @@ p {
     -moz-transition: all linear 0.7s;
     transition: all linear 0.7s;
     display: block;
-    width: 100%;
+    width: 70%;
 }
 
 .custom-error-class.ng-hide {
